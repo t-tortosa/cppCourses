@@ -1,2 +1,3 @@
-# cppCourses
-A cpp Course in latex
+# cppCourses 
+Cpp courses with WPS presentation
+
