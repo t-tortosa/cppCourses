@@ -63,4 +63,41 @@ int main() {
   return 0;
 }
 
+class rectangle {
+private:
+  /* On souhaite imposer que les positions
+   * x et y du rectangle soient modifiées
+   * en même temps
+   *
+   * Les positions sont donc rendues privées
+   * afin d'éviter un accès extérieur
+   */
 
+  float x;
+  float y;
+
+public:
+  /* Définition des attributs */
+  float largeur;
+  float hauteur;
+
+  /* Définition des méthodes */
+  float calculerAire();
+  float modifierPosition(int xNew, int yNew);
+};
+
+#include <iostream>
+using namespace std;
+
+int main() {
+  /* Instancie une variable de type rectangle */
+  rectangle rect;
+
+  /* Pas de problème */
+  rect.largeur = 10;
+
+  /* Erreur de compilation */
+  rect.x = 10;
+
+  return 0;
+}

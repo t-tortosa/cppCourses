@@ -115,5 +115,29 @@ int main() {
   return 0;
 }
 
+class tableau {
+public:
+  tableau(const int taille, const char *message) {
+    tailleTableau = taille;
+    tab = new char[taille];
+  }
 
+  int tailleTableau;
+  char *tab;
+}
 
+int main() {
+  const char *str = "Hello world !";
+  /* Initialisation et allocation mémoire
+   * du tableau avec le message str */
+  tableau *t = new tableau(stdlen(str), str);
+
+  /* Récupération de l'attribut tab */
+  char *tab = t->tab;
+
+  /* On libère la mémoire pour le pointeur t */
+  delete t;
+
+  /* Quel message s'affiche ici ? */
+  std::cout << tab << std::endl;
+}
