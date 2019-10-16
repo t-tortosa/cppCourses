@@ -1,3 +1,3 @@
 # cppCourses 
-Cpp courses with WPS presentation
+Cpp courses using Jupyter notebooks with xeus extension
 
