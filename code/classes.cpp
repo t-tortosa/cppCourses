@@ -1,3 +1,4 @@
+/* Human class */
 class Human {
   /* Ne nous occupons pas de ce mot clé pour le moment */
 public:
